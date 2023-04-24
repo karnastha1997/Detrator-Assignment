@@ -98,11 +98,11 @@ button:hover{
   }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .parent-container {
     max-width: 90%;
     margin: auto;
-    grid-template-columns: 2fr;
+    grid-template-columns: auto auto;
   }
-} */
+}
 

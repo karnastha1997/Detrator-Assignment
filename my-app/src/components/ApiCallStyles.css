@@ -104,5 +104,17 @@ button:hover{
     margin: auto;
     grid-template-columns: auto auto;
   }
+
+  .title {
+    font-size: 1rem;
+    height: 15%;
+  }
+
+  .about{
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding-top: 3rem;
+  }
+    
 }
 

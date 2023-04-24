@@ -36,8 +36,12 @@ const ApiCall = () => {
             <div className='parent-container'>
                 {posts?.slice(0, visibleItems)?.map((item, index) => (
                     <div className='grid-item' key={index}>
+                        {/* render only post title */}
                         <div className='title'><h2>{item.title}</h2></div>
+                        {/* render only post body */}
                         <div className='body'>{item.body}</div>
+
+                        {/* render tags and reaction */}
                         <div className="about">
                             <div onChange={handleTagChange}>Tags : {item.tags.join()}</div>
                             <div>Reaction : {item.reactions}</div>
@@ -45,6 +49,7 @@ const ApiCall = () => {
                     </div>
                 ))}
             </div>
+            {/* render view more option to see more posts */}
             <div className='btn'>
                     {visibleItems < posts.length && (
                         <button className='' onClick={handleLoadMore}>View More</button>

@@ -1,0 +1,99 @@
+.work-container{
+  background-color: #000;
+}
+
+.project-heading {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+  color: #fff;
+}
+
+.parent-container {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(88, 81, 81);
+  padding: 10px;
+  grid-gap: 40px;
+}
+
+.grid-item {
+  background-color: rgba(247, 226, 226, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item:hover{
+    transform: scale(1);
+		background: #fff;
+		z-index: 2;
+		box-shadow: 2px 2px 2px #000;
+    
+}
+
+.grid-item:hover .body{
+  color: #000;
+}
+
+.title {
+  color: rgb(35, 35, 79);
+  padding: 1rem 0;
+  font-size: 1rem;
+  height: 10%;
+}
+
+.heading{
+  height: 10%;
+}
+
+.body {
+  color: rgb(100, 2, 2);
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-top: 2rem;
+  height: 50%;
+}
+
+.btn {
+  width: 100%;
+  padding: 2% 0;
+}
+
+button {
+  background-color: lightblue;
+  color: black;
+  font-size: 25px;
+  margin: auto;
+  padding: 0.5rem 7rem;
+}
+
+button:hover{
+  transform: scale(1);
+		background: #000;
+		z-index: 2;
+    color: #fff;
+		box-shadow: 2px 2px 2px #fff;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  height: 10%;
+  color: rgb(35, 35, 79);
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .parent-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

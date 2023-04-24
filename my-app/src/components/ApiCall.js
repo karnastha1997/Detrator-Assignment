@@ -7,12 +7,16 @@ const ApiCall = () => {
     const [posts, setPosts] = useState([])
     const [visibleItems, setVisibleItems] = useState(limit);
 
-
-    // console.log("visbleitem", visibleItems)
-
+    //  for limit how many numbers of card should display on home
     const handleLoadMore = () => {
         setVisibleItems(visibleItems + limit);
     }
+
+    const handleTagChange = (event) => {
+        const newTags = event.target.value.split(/[, ]+/);
+        setPosts(newTags)
+    };
+
     useEffect(() => {
         axios
             .get('https://dummyjson.com/posts')
@@ -25,13 +29,6 @@ const ApiCall = () => {
             })
     }, [])
 
-
-    const handleTagChange = (event) => {
-        const newTags = event.target.value.split(/[, ]+/);
-        setPosts(newTags)
-      };
-
-    console.log("postssssss", posts)
     return (
 
         <div className="work-container">
